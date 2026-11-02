@@ -1,1 +1,74 @@
-@import "tailwindcss";
+/* App styles */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Loading overlay */
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Empty state */
+.empty-state {
+  @apply flex flex-col items-center justify-center min-h-64 p-6 text-center;
+}
+
+/* Responsive helpers */
+.md\:hidden {
+  @apply hidden md:block;
+}
+
+.md\:block {
+  @apply hidden md:block;
+}
+
+.md\:flex {
+  @apply hidden md:flex;
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(90deg, #6366f1, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Toast notification */
+.toast {
+  @apply fixed bottom-4 right-4 max-w-sm w-full bg-black text-white text-sm px-4 py-3 rounded-lg shadow-lg pointer-events-auto animate-slide-up;
+}
+
+/* Animation helpers */
+.animate-slide-up {
+  animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY: 100%;
+  }
+  to {
+    opacity: 1;
+    transform: translateY: 0;
+  }
+}
+
+/* Truncate long text */
+.truncate {
+  @apply truncate;
+}

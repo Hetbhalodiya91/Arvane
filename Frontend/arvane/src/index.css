@@ -1,36 +1,54 @@
 @import "tailwindcss";
 
+/* Tailwind base styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
-  font-family: "Inter";
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-@font-face {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 200;
-  src: url(assets/fonts/Inter-ExtraLight.ttf);
+/* Custom styles */
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-lg px-4 py-2 font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed;
 }
 
-@font-face {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 300;
-  src: url(assets/fonts/Inter-Regular.ttf);
+.btn-secondary {
+  @apply inline-flex items-center justify-center rounded-lg px-4 py-2 font-medium text-gray-700 bg-gray-100 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed;
 }
 
-@font-face {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  src: url(assets/fonts/Inter-Medium.ttf);
+.card {
+  @apply bg-white rounded-lg shadow-md overflow-hidden;
 }
 
-@font-face {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 700;
-  src: url(assets/fonts/Inter-Bold.ttf);
+.container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Loading spinner */
+.spinner {
+  @apply animate-spin rounded-full border-2 border-transparent border-t-indigo-600;
 }
