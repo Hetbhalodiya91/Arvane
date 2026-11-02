@@ -1,0 +1,14 @@
+C:\Users\bhalo\Desktop\ENG\Arvane\Backend\order-service\src\main\java\com\arvane\orderservice\client\ProductClient.java
+C:\Users\bhalo\Desktop\ENG\Arvane\Backend\order-service\src\main\java\com\arvane\orderservice\controller\OrderController.java
+C:\Users\bhalo\Desktop\ENG\Arvane\Backend\order-service\src\main\java\com\arvane\orderservice\dto\OrderItemRequest.java
+C:\Users\bhalo\Desktop\ENG\Arvane\Backend\order-service\src\main\java\com\arvane\orderservice\dto\OrderItemResponse.java
+C:\Users\bhalo\Desktop\ENG\Arvane\Backend\order-service\src\main\java\com\arvane\orderservice\dto\OrderRequest.java
+C:\Users\bhalo\Desktop\ENG\Arvane\Backend\order-service\src\main\java\com\arvane\orderservice\dto\OrderResponse.java
+C:\Users\bhalo\Desktop\ENG\Arvane\Backend\order-service\src\main\java\com\arvane\orderservice\entity\Order.java
+C:\Users\bhalo\Desktop\ENG\Arvane\Backend\order-service\src\main\java\com\arvane\orderservice\entity\OrderItem.java
+C:\Users\bhalo\Desktop\ENG\Arvane\Backend\order-service\src\main\java\com\arvane\orderservice\entity\OrderRepository.java
+C:\Users\bhalo\Desktop\ENG\Arvane\Backend\order-service\src\main\java\com\arvane\orderservice\entity\OrderStatus.java
+C:\Users\bhalo\Desktop\ENG\Arvane\Backend\order-service\src\main\java\com\arvane\orderservice\feign\ProductClient.java
+C:\Users\bhalo\Desktop\ENG\Arvane\Backend\order-service\src\main\java\com\arvane\orderservice\OrderServiceApplication.java
+C:\Users\bhalo\Desktop\ENG\Arvane\Backend\order-service\src\main\java\com\arvane\orderservice\repository\OrderItemRepository.java
+C:\Users\bhalo\Desktop\ENG\Arvane\Backend\order-service\src\main\java\com\arvane\orderservice\service\OrderService.java

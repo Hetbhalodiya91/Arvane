@@ -1,0 +1,37 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: user-service
+          uri: lb://user-service
+          predicates:
+            - Path=/api/v1/auth/**
+          filters:
+            - StripPrefix=0
+        - id: product-service
+          uri: lb://product-service
+          predicates:
+            - Path=/api/v1/categories/**, /api/v1/products/**
+          filters:
+            - StripPrefix=0
+    discovery:
+      locator:
+        enabled: true
+        lower-case-service-id: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    fetch-registry: true
+    register-with-eureka: true
+  instance:
+    prefer-ip-address: true
+
+jwt:
+  secret: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970

@@ -1,0 +1,3 @@
+com\arvane\apigateway\filter\JwtAuthenticationFilter.class
+com\arvane\apigateway\config\CorsConfig.class
+com\arvane\apigateway\ApiGatewayApplication.class

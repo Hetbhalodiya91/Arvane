@@ -1,0 +1,17 @@
+com\arvane\userservice\controller\AuthController.class
+com\arvane\userservice\security\JwtAuthenticationFilter.class
+com\arvane\userservice\dto\RegisterRequest$RegisterRequestBuilder.class
+com\arvane\userservice\UserServiceApplication.class
+com\arvane\userservice\security\JwtService.class
+com\arvane\userservice\dto\AuthRequest$AuthRequestBuilder.class
+com\arvane\userservice\entity\User.class
+com\arvane\userservice\service\AuthService.class
+com\arvane\userservice\entity\User$UserBuilder.class
+com\arvane\userservice\security\SecurityConfig.class
+com\arvane\userservice\dto\AuthResponse.class
+com\arvane\userservice\repository\UserRepository.class
+com\arvane\userservice\security\UserDetailsServiceImpl.class
+com\arvane\userservice\dto\RegisterRequest.class
+com\arvane\userservice\entity\Role.class
+com\arvane\userservice\dto\AuthResponse$AuthResponseBuilder.class
+com\arvane\userservice\dto\AuthRequest.class
